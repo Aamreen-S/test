@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(128, 125, 125, 0.8)), url(back.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navigation Bar */
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    min-height: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+/* Buttons in Navigation Bar */
+.nav__links .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Button background color */
+    border: 1px solid transparent; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 500;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav__links .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighten background on hover */
+    color: black; /* Change text color */
+    border: 1px solid black; /* Add a border */
+}
+
+/* Content */
+.content {
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #222;
+}
+
+.content p {
+    margin: 20px 0 50px;
+    font-size: 20px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+
+.feature-img {
+    width: 400px;
+    position: absolute;
+    bottom: 100px;
+    right: 10%;
+}
+
+.feature-img.anim {
+    animation-delay: 1.5s;
+}
+
+/* Animation */
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #b2b0b0;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Resume Section */
+#resume {
+    padding: 50px;
+    background-color: #dcddde;
+    margin: 5px;
+}
+
+#resume h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+#resume p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#resume a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
